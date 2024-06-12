@@ -1,0 +1,62 @@
+.postForm{
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.postForm input,
+.postForm textarea {
+    border-radius: 20px;
+    border: 1px solid transparent;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    width: 200px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.postForm textarea {
+    height: 50px;
+    resize: none;
+}
+
+.postForm button {
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+
+.postForm button:hover {
+    background: black;
+    color: white;
+
+}
+
+@media (max-width:390px) {
+
+    .postForm input,
+    .postForm textarea {
+        width: 100px;
+    }
+
+    .postForm button {
+        width: 100px;
+    }
+}

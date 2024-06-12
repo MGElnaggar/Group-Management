@@ -1,25 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import GroupForm from './Components/GroupForm/GroupForm';
+import GroupList from './Components/GroupLists/GroupLists';
+import classes from './App.module.css';
 
-function App() {
+const App = () => {
+  const [groups, setGroups] = useState([]);
+
+  const addGroup = (group) => {
+    setGroups([...groups, group]);
+  };
+
+  const editGroup = (id, updatedGroup) => {
+    setGroups(groups.map((group) => (group.id === id ? updatedGroup : group)));
+  };
+
+  const deleteGroup = (id) => {
+    setGroups(groups.filter((group) => group.id !== id));
+  };
+
+  const addPost = (groupId, post) => {
+    setGroups(groups.map(group => 
+      group.id === groupId ? { ...group, posts: [...group.posts, post] } : group
+    ));
+  };
+
+  const editPost = (groupId, postId, updatedPost) => {
+    setGroups(groups.map(group => 
+      group.id === groupId ? { 
+        ...group, 
+        posts: group.posts.map(post => post.id === postId ? updatedPost : post) 
+      } : group
+    ));
+  };
+
+  const deletePost = (groupId, postId) => {
+    setGroups(groups.map(group => 
+      group.id === groupId ? { 
+        ...group, 
+        posts: group.posts.filter(post => post.id !== postId) 
+      } : group
+    ));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.app}>
+      <div className={classes.appForm}>
+        <h1>Groups</h1>
+        <GroupForm addGroup={addGroup} />
+        <GroupList
+          groups={groups}
+          editGroup={editGroup}
+          deleteGroup={deleteGroup}
+          addPost={addPost}
+          editPost={editPost}
+          deletePost={deletePost}
+        />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

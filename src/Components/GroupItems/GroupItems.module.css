@@ -1,0 +1,44 @@
+.items {
+    margin-top: 20px;
+    width: 300px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 1px solid black;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media (max-width:390px) {
+    .items{
+        width: 200px;
+    }
+    .items button {
+        width: 50px;
+    }
+}
+
+.items button {
+    width: 100px;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+
+.items button:hover {
+    background: black;
+    color: white;
+
+}
+
+.items button:nth-child(6),
+.items button:nth-child(7) {
+    width: 150px;
+}
