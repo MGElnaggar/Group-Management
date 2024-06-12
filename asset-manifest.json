@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Group-Management/static/css/main.b987706e.css",
+    "main.js": "/Group-Management/static/js/main.c1bb8fb3.js",
+    "static/js/453.dfa77dba.chunk.js": "/Group-Management/static/js/453.dfa77dba.chunk.js",
+    "index.html": "/Group-Management/index.html",
+    "main.b987706e.css.map": "/Group-Management/static/css/main.b987706e.css.map",
+    "main.c1bb8fb3.js.map": "/Group-Management/static/js/main.c1bb8fb3.js.map",
+    "453.dfa77dba.chunk.js.map": "/Group-Management/static/js/453.dfa77dba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b987706e.css",
+    "static/js/main.c1bb8fb3.js"
+  ]
+}
