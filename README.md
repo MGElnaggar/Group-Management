@@ -41,4 +41,4 @@ Each group has the following fields:
 4. Create and view posts within each group.
 
 
-**View Site : https://mgelnaggar.github.io/Group-Management/
+- **View Site** : https://mgelnaggar.github.io/Group-Management/
