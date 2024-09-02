@@ -68,4 +68,7 @@ This is a React.js application that allows users to create, view, update, and de
 4. Create and view posts within each group.
 
 
-**View Site** : https://mgelnaggar.github.io/Group-Management/
+
+---
+
+### View Site : https://mgelnaggar.github.io/Group-Management/
