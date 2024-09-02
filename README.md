@@ -24,7 +24,7 @@ This is a React.js application that allows users to create, view, update, and de
 - **Functionality**: Users to create and view posts within each group. Each group has a list of posts with a title and content.
 
 
-## Site Flow
+## Application Flow
 
 1. **Create a Group**
    - The user is presented with a form where they must enter the `group name` and `description`.
